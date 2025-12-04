@@ -50,7 +50,7 @@ SYSTEM_PROMPT=...
 双击项目根目录下的 **`run_backend.bat`**。
 
 *   **重要**: 首次运行时，脚本会自动创建名为 `venv` 的虚拟环境，并自动激活该环境，然后安装 `requirements.txt` 中所需的所有依赖。
-*   如果您选择手动运行，请务必先执行 `venv\Scripts\activate` 激活环境，然后运行 `pip install -r backend/requirements.txt` 安装依赖。
+*   如果您选择手动运行，请务必先执行 `venv\Scripts\activate` 激活环境，然后运行 `pip install -r requirements.txt` 安装依赖。
 *   启动 FastAPI 服务，默认监听 `http://localhost:8080` (可在 `.env` 中修改 `BACKEND_PORT`)。
 
 ### 3. 启动前端
