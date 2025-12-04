@@ -3,15 +3,14 @@ echo Starting Backend...
 cd /d "%~dp0"
 
 if not exist "venv" (
-    echo Creating virtual environment...
-    python -m venv venv
+    echo Error: Virtual environment not found!
+    echo Please run 'install_dependencies.bat' first to set up the environment.
+    pause
+    exit /b
 )
 
 call venv\Scripts\activate
 echo Virtual Environment Activated.
-
-echo Installing dependencies...
-pip install -r requirements.txt
 
 echo Starting server...
 cd backend
